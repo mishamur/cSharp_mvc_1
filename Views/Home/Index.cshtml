@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+@foreach(var item in ViewBag.Weeks)
+{
+    <p>@item.NameDay</p>
+    
+    foreach(var less in item.Lessons)
+    {
+        <p>@less</p>
+    }
+    
+}
